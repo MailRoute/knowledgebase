@@ -1,0 +1,27 @@
+MailRoute experienced a service disruption on Monday, February 18th.  During this incident, the MailRoute Service was unable to receive and process email.  The MailRoute control panel was also affected.
+
+This behaviour began at 11:20am PST (19:20 GMT) and lasted until 4:08pm (00:08 GMT).
+
+**Cause**
+
+MailRoute's primary datacenter provider experienced a severe problem with their power distribution hardware.  The datacenter has multiple incoming power sources, feeding into a bank of backup batteries capable of powering all server for a minimum of 8 hours (and there are generators to take over during any extended power outage).  The batteries feed into a bank of 3 power inverters (in an N+1 configuration), which then feed the servers.  
+
+The power inverters have an external display that shows the load on the inverters.  However, a failure in the inverters was causing the display to show an incorrect value.  Technicians walk by and physically check these inverters periodically during the day, but the values displayed were within normal operating range.
+
+One inverter failed.  Because of the faulty indicators on the inverts, the load placed on the remaining two was much higher than they could handle, and they failed too.  Repeated efforts to bring them back online was hampered by the faulty indicators.
+
+This caused complete loss of power to the central MailRoute servers, and the provider's routers that supply connectivity.  In addition, our DNS resolution was affected because of it's dependence on the routers and their BGP routing tables.
+
+**Remediation**
+
+Electricans repaired the inverters and replaced the faulty indicator panels. The servers were restarted and mail flow began immediately.   Additional support services, such as the online control panel, were brought back online.
+
+**Future Prevention**
+
+The following changes will be put in place over the next one to two weeks.
+
+Since the "redundant" set of power inverters proved to be a single point of failure due to the cascading nature of the failure, the power feeding each and every cabinet in the MailRoute datacenter is being divided amongst two separate banks of inverters, such that the loss of one set will not result in complete power loss.
+
+We are re-architecting our DNS infrastructure to run in a stand-alone fashion and to remove any heavy dependence on any outside piece of hardware.  This critical service should be able to remain functional at all times, and should fail over into a functional, if non-optimal, state when loss of other primary services occurs.
+
+
