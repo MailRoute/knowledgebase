@@ -1,0 +1,8 @@
+To run the local server for dev, testing, authoring new articles
+
+# hugo server -D
+
+Then open http://localhost:1313/kb/ in your web browser.
+
+That's it!
+
