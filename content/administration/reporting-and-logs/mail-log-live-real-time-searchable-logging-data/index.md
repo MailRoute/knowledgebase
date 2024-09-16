@@ -1,23 +1,17 @@
 ---
 created_at: 2020-03-10 17:15:39
 date: 2024-07-15 21:34:39
-description: Comprehensive guide on using the real-time, searchable mail log for MailRoute
-  administrators, covering access, search filters, log entry details, and tips for
-  troubleshooting email delivery.
+description: Comprehensive guide on using the real-time, searchable mail log for MailRoute administrators, covering access, search filters, log entry details, and tips for troubleshooting email delivery.
 draft: true
 params:
   author: Unknown
-summary: The article provides a detailed guide on using the real-time, searchable
-  mail log feature for MailRoute administrators, including how to access it, search
-  options, and how to interpret the log entries and details.
+summary: The article provides a detailed guide on using the real-time, searchable mail log feature for MailRoute administrators, including how to access it, search options, and how to interpret the log entries and details.
 tags: null
 title: Mail Log - Live, Real-Time, Searchable, Logging Data
 ---
 
 
-# **Real-time, searchable logs for MailRoute Administrators**
-
-## **Getting Started**
+### Getting Started
 
 Login to MailRoute's dashboard with your Admin credentials
 
@@ -29,7 +23,7 @@ You will be taken to the mail log search:
 
 ![Screen_Shot_2020-03-10_at_12.12.35_PM.png](360060154174.png)
 
-## Search Options
+### Search Options
 
 **Required:**
 
@@ -45,7 +39,7 @@ hour.
 
 **From** \- enter the sender you wish to search for - either a domain or a
 full email address. For example, you can search for "user@domain.com" or
-"domain.com"
+"domain.com". 
 
 **To** \- enter the recipient you wish to search for- either a domain or a
 full email address. For example, you can search for "user@domain.com" or
@@ -64,7 +58,7 @@ drop down menu:
 
 Press the **Search** button to see results.
 
-## **How to Read the Mail Log **
+### How to Read the Mail Log
 
 **Direction** \- unless specified in the search, this will indicate if the
 mail was inbound or outbound
