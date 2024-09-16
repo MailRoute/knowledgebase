@@ -1,0 +1,28 @@
+############## English navigation ###############
+# main menu
+[[main]]
+name = "Home"
+url = ""
+weight = 1
+
+#[[main]]
+#name = "Github"
+#url = "https://github.com/mailroute/"
+#weight = 2
+
+
+# footer menu
+[[footer]]
+name = "Changelog"
+url = "https://admin.mailroute.net/changelog/"
+weight = 1
+
+[[footer]]
+name = "Contact"
+url = "mailto:support@mailroute.net/"
+weight = 2
+
+#[[footer]]
+#name = "Github"
+#url = "https://github.com/mailroute/"
+#weight = 3

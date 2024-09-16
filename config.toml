@@ -1,0 +1,18 @@
+baseURL = "https://kb.mailroute.net"
+languageCode = "en-us"
+title = "MailRoute Knowledgebase"
+#theme = "custom"
+logo = "assets/images/mailroute-logo-2016-140x583.svg"
+favicon = "favicon-32x32.png"
+description = "Explore MailRoute's support resources for email security and spam filtering services. Find guides, FAQs, and troubleshooting tips to optimize your email experience."
+
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[params]
+  description = "MailRoute Email Security and Hosting KnowledgeBase"
+
+[outputs]
+  home = ["HTML", "RSS"]
